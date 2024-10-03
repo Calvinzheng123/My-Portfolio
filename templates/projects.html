@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Projects</h2>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="{{ url_for('static', filename='img/project_1.png') }}" class="pdf-page" alt="Project 1">
+            <div class="card-body">
+                <h5 class="card-title">Binomial Probability Webapp</h5>
+                <p class="card-text">"Developed a binomial probability calculator <a href="https://binomial-probability-with-replacement.onrender.com/" target="_blank">webapp</a> to predict the chances of obtaining specific in-game units based on a player's current level, unit rarity, and available resources. The tool models real-time probabilities, aiding players in strategic decision-making by assessing their chances of success given game constraints, including remaining rolls and unit availability."</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="{{ url_for('static', filename='img/project_2.png') }}" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+                <h5 class="card-title">Champions League Prediction Model</h5>
+                <p class="card-text">Built a logistic multi-classification model using five years of Champions League data for each team's league performance. Adjusted metrics like points, expected goals (xG), and goal difference based on FIFA coefficient values to account for league strength disparities. Incorporated historical progression data for teams through Champions League stages as features, and assigned weights to each stage to enhance model accuracy in predicting advancement chances.".</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="{{ url_for('static', filename='img/project3.jpg') }}" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Description of the project, what technologies were used, and what problem it solved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
