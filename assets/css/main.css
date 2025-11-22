@@ -1,0 +1,13 @@
+/* General small tweaks on top of Tailwind */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Slightly tighter max width on very large screens */
+  @media (min-width: 1280px) {
+    .max-w-5xl {
+      max-width: 60rem;
+    }
+  }
+  
