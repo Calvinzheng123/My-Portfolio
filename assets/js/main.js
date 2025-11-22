@@ -1,4 +1,3 @@
-// Simple smooth-scroll helper (in case some browsers ignore CSS scroll-behavior)
 document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll(".nav-link[href^='#']");
   
